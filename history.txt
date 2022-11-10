@@ -1,0 +1,31 @@
+    1  sudo dpkg -i mysql-apt-config_0.8.12-1_all.deb
+    2  sudo apt update
+    3  sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 467B942D3A79BD29
+    4  sudo apt-cache policy mysql-server
+    5  sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
+    6  sudo apt update
+    7  sudo apt-cache policy mysql-server
+    8  sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
+    9  sudo systemctl status mysql
+   10  service mysql status
+   11  service mysql start
+   12  clear
+   13  sudo mysql_secure_installation
+   14  mysql -u root -p
+   15  CREATE USER  report@localhost IDENTIFIED BY 123456;
+   16  sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
+   17  sudo apt remove mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
+   18  sudo apt install -f mysql-client=5.7* mysql-community-server=5.7* mysql-server=5.7*
+   19  sudo mysql_secure_installation
+   20  service mysql stop
+   21  sudo mysqld_safe --skip-grant-tables
+   22  tmux new -s report
+   23  sudo apt install tmux
+   24  ls
+   25  clear
+   26  tmux new -s report
+   27  tmux ls
+   28  tmux attach -t report
+   29  ls
+   30  history 
+   31  history > ./history.txt
